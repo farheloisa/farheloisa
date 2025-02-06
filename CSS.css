@@ -1,0 +1,481 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+/* basic elements */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --background-color: #e6e6e6;
+  --header-color: #709111;
+  --surface-color: #ffffff;
+  --text-color-primary: #151515;
+  --text-color-secundary: #404040;
+}
+
+body {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 96px;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  margin: 0;
+}
+
+.page-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro {
+  width: 100%;
+  background-color: var(--header-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.header::after {
+  content: "";
+  background-image: url("/imagens/inicio.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header h1 {
+  color: var(--text-color-primary);
+  margin-bottom: 20px;
+}
+.header h2 {
+  color: var(--text-color-secundary);
+}
+
+.summary {
+  background-color: var(--surface-color);
+  text-align: center;
+  padding: 8px;
+}
+
+.summary a {
+  background-color: var(--header-color);
+  border-radius: 4px;
+  color: var(--surface-color);
+  text-decoration: none;
+  padding: 8px;
+}
+
+.preamble {
+  position: relative;
+  padding: 48px 64px;
+  padding-right: calc(20px + 20vw);
+  background-color: var(--background-color);
+}
+
+.preamble h3 {
+  min-width: 100%;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 34px;
+  text-align: left;
+}
+
+.preamble p {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  text-align: left;
+}
+.preamble acronym {
+  border-radius: 4px;
+  font-style: italic;
+  text-decoration: none;
+  padding: 2px;
+}
+
+.preamble::after {
+  content: "";
+  background-image: url("/imagens/o\ caminho.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 20vw;
+  height: 100%;
+  margin: 16px;
+  transform: translate(0, -50%);
+}
+.explanation {
+  position: relative;
+  padding: 48px 64px;
+  padding-right: calc(20px + 20vw);
+  background-color: var(--background-color);
+  margin-right: 60px;
+}
+.explanation acronym {
+  border-radius: 4px;
+  font-style: italic;
+  text-decoration: none;
+  padding: 2px;
+}
+.explanation p {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  text-align: left;
+}
+.explanation h3,
+.explanation p {
+  min-width: 100%;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 34px;
+  text-align: right;
+  padding-left: 22vw;
+}
+.explanation p {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  text-align: right;
+}
+.explanation::after {
+  content: "";
+  background-image: url("/imagens/o\ caminho.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 20vw;
+  height: 100%;
+  margin: 16px;
+  transform: translate(0, -50%);
+}
+
+.participation {
+  position: relative;
+  padding: 48px 64px;
+  padding-right: calc(20px + 20vw);
+  background-color: var(--background-color);
+}
+
+.participation h3 {
+  min-width: 100%;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 34px;
+  text-align: left;
+}
+
+.participation p {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  text-align: left;
+}
+
+.participation p acronym {
+  border-radius: 4px;
+  font-style: italic;
+  text-decoration: none;
+  padding: 2px;
+}
+.participation strong a {
+  font-style: italic;
+  text-decoration: underline;
+  font-style: bold;
+}
+.participation strong {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  text-align: left;
+}
+.participation a {
+  color: var(--text-color-primary);
+  border-radius: 4px;
+  font-style: underline;
+  font: var(--text-color-primary);
+  padding: 1px;
+}
+.participation a:hover {
+  background-color: var(
+    --header-color
+  ); /* cor ao passar mouse*/
+}
+
+.participation::after {
+  content: "";
+  background-image: url("/imagens/participacao.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 20vw;
+  height: 100%;
+  margin: 16px;
+  transform: translate(0, -50%);
+}
+
+.benefits {
+  position: relative;
+  padding: 64px 48px;
+  background-color: var(--background-color);
+  margin: 60px;
+}
+
+.benefits p {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  text-align: right;
+  padding-left: 22vw;
+}
+.benefits h3 {
+  min-width: 100%;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 34px;
+  text-align: right;
+}
+.benefits p {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+}
+.benefits acronym {
+  border-radius: 4px;
+  font-style: italic;
+  text-decoration: none;
+  padding: 2px;
+}
+
+.benefits::after {
+  content: "";
+  background-image: url("/imagens/Beneficios.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 20vw;
+  height: 100%;
+  margin: 16px;
+  transform: translate(0, -50%);
+}
+.requirements {
+  position: relative;
+  padding: 48px 64px;
+  padding-right: calc(15vw + 10vw);
+  background-color: var(--background-color);
+  margin-right: 100px;
+}
+
+.requirements h3 {
+  min-width: 100%;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 34px;
+  text-align: left;
+}
+
+.requirements p {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  text-align: left;
+}
+.requirements acronym {
+  border-radius: 4px;
+  font-style: italic;
+  text-decoration: none;
+  padding: 2px;
+}
+.requirements a {
+  color: var(--text-color-primary);
+  border-radius: 4px;
+  font-style: underline;
+  font: var(--text-color-primary);
+  padding: 1px;
+}
+.requirements a:hover {
+  background-color: var(--header-color);
+}
+
+.requirements::after {
+  content: "";
+  background-image: url("/imagens/requerimentos.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 20vw;
+  height: 100%;
+  margin: 16px;
+  transform: translate(0, -50%);
+}
+.main {
+  background-color: var(--background-color);
+  padding: 8px;
+  padding-bottom: 36px;
+}
+
+.sidebar {
+  background-color: var(--surface-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  transform: translate(-100%, 0);
+  /*transition: all 350ms ease-in-out;*/
+}
+
+.sidebar::before {
+  content: ">";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 60px;
+  width: 30px;
+  right: -30px;
+  border-radius: 0 4px 4px 0;
+  background-color: var(--surface-color);
+}
+.sidebar h3 {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 30px;
+}
+.sidebar ul {
+  list-style-type: none; 
+  padding-left: 1; 
+  line-height: 30px;
+}
+.sidebar acronym {
+  border-radius: 4px;
+  font-style: italic;
+  text-decoration: none;
+  padding: 2px;
+}
+.sidebar {
+  width: 300px;
+  padding: 10px;
+  word-wrap: break-word;   /* Quebra de palavra caso necessário */
+  line-height: 1.5px;
+}
+
+.sidebar a {
+  color: var(--text-color-primary);
+    border-radius: 4px;
+    text-decoration: none;
+    list-style-type: none;
+    font: var(--text-color-primary);
+    padding: 1px;
+    width: 300px;
+}
+.sidebar a:hover {
+  background-color: var(
+    --header-color
+  ); 
+}
+
+.sidebar:hover {
+  transform: translate(0, 0);
+}
+
+.footer {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  bottom: 0;
+  left: 20px;
+  padding: 8px;
+  border-radius: 4px 4px 0 0;
+  background-color: var(--header-color);
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--text-color-secundary);
+  border-bottom: none;
+}
+
+.footer a {
+  color: var(--text-color-primary);
+  text-decoration: none;
+}
+
