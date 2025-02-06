@@ -1,8 +1,8 @@
-Hi there 👋
-I'm Heloisa Faria, 23 yo, Toledo, PR, Brazil
+Oi, 👋
+I'm Heloisa Faria, 26anos, Toledo, PR, Brasil
 
-- 🌱 computer engineering student - UTFPR
-- 📫 heloisafaria@hotmail.com
+- 🌱 Téc. em Sistema da Internet - UTFPR
+- 📫 preussfaria123@gmail.com
 
 <!---
 - 💞️ I’m looking to collaborate on ...- 👀 I’m interested in ...
