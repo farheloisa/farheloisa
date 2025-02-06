@@ -1,5 +1,5 @@
 Oi, 👋
-I'm Heloisa Faria, 26anos, Toledo, PR, Brasil
+Eu sou Heloisa Faria, 26anos, Toledo, PR, Brasil
 
 - 🌱 Téc. em Sistema da Internet - UTFPR
 - 📫 preussfaria123@gmail.com
